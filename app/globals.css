@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 273 100% 5%;
+  --foreground: 210 40% 98%;
+
+  --card: 273 100% 10%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 273 100% 10%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 180 100% 50%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+
+  --secondary: 273 100% 50%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 273 50% 20%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 273 50% 25%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 273 50% 30%;
+  --input: 273 50% 30%;
+  --ring: 180 100% 50%;
+
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
